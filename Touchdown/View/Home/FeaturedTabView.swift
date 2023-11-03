@@ -21,6 +21,8 @@ struct FeaturedTabView: View {
 struct FeaturedTabView_Previews: PreviewProvider {
     static var previews: some View {
         FeaturedTabView()
+            .padding(.top, 10)
+            .padding(.horizontal, 15)
             .background(Color.gray)
     }
 }
