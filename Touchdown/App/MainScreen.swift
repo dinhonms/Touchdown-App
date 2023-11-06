@@ -25,6 +25,7 @@ struct MainScreen: View {
                         FeaturedTabView()
                             .frame(height: 300)
                             .padding(.horizontal, 15)
+                        CategoryGridView()
                         Spacer()
                         FooterView()
                     }//: VStack

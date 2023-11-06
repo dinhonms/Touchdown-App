@@ -24,6 +24,10 @@
 		775243C02AF50159008F8C43 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 775243BC2AF50159008F8C43 /* product.json */; };
 		775243C12AF50159008F8C43 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 775243BD2AF50159008F8C43 /* brand.json */; };
 		775243C32AF501E1008F8C43 /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775243C22AF501E1008F8C43 /* FeaturedTabView.swift */; };
+		775C0F0F2AF8EB160069701A /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775C0F0E2AF8EB160069701A /* CategoryModel.swift */; };
+		775C0F112AF8EE290069701A /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775C0F102AF8EE290069701A /* CategoryItemView.swift */; };
+		775C0F132AF8F1780069701A /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775C0F122AF8F1780069701A /* CategoryGridView.swift */; };
+		775C0F152AF8F39B0069701A /* SectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775C0F142AF8F39B0069701A /* SectionItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		775243BC2AF50159008F8C43 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 		775243BD2AF50159008F8C43 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
 		775243C22AF501E1008F8C43 /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
+		775C0F0E2AF8EB160069701A /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		775C0F102AF8EE290069701A /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		775C0F122AF8F1780069701A /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		775C0F142AF8F39B0069701A /* SectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,9 @@
 				771EE5892AF25A8B005E8003 /* NavigationBarView.swift */,
 				771EE58B2AF25BC3005E8003 /* LogoView.swift */,
 				775243C22AF501E1008F8C43 /* FeaturedTabView.swift */,
+				775C0F102AF8EE290069701A /* CategoryItemView.swift */,
+				775C0F122AF8F1780069701A /* CategoryGridView.swift */,
+				775C0F142AF8F39B0069701A /* SectionItemView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				775243B32AF4FD52008F8C43 /* PlayerModel.swift */,
+				775C0F0E2AF8EB160069701A /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775C0F132AF8F1780069701A /* CategoryGridView.swift in Sources */,
 				771EE56F2AF2533A005E8003 /* MainScreen.swift in Sources */,
+				775C0F0F2AF8EB160069701A /* CategoryModel.swift in Sources */,
 				771EE58C2AF25BC3005E8003 /* LogoView.swift in Sources */,
+				775C0F152AF8F39B0069701A /* SectionItemView.swift in Sources */,
 				775243B42AF4FD52008F8C43 /* PlayerModel.swift in Sources */,
 				775243B22AF4FCA9008F8C43 /* Extension.swift in Sources */,
 				771EE5882AF256AA005E8003 /* FooterView.swift in Sources */,
@@ -257,6 +272,7 @@
 				775243C32AF501E1008F8C43 /* FeaturedTabView.swift in Sources */,
 				771EE5862AF25592005E8003 /* Constant.swift in Sources */,
 				775243B82AF4FFEA008F8C43 /* FeaturedItemView.swift in Sources */,
+				775C0F112AF8EE290069701A /* CategoryItemView.swift in Sources */,
 				771EE58A2AF25A8B005E8003 /* NavigationBarView.swift in Sources */,
 				775243B62AF4FD86008F8C43 /* CodableBundleExtension.swift in Sources */,
 			);
