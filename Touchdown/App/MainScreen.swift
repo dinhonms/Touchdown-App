@@ -27,15 +27,20 @@ struct MainScreen: View {
                             .padding(.horizontal, 15)
                         
                         CategoryGridView()
-                        
                         TitleView(title: "Helmets")
+                        
                         LazyVGrid(columns: gridLayout, alignment: .leading, spacing: 15) {
                             ForEach(products) { product in
                                 ProductItemView(product: product)
                             }//ForEach
                         }//LazyVGrid
                         .padding(15)
+                        
+                        TitleView(title: "Brands")
+                        BrandGridView()
+                        
                         FooterView()
+                        
                     }//: VStack
                 })//: ScrollView
                 
