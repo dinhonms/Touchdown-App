@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct TopPartDetailView: View {
+    //MARK: - PROPERTIES
+    @State private var isAnimating = false
+    
+    //MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center, spacing: 6, content: {
+            VStack(alignment: .leading, spacing: 6, content: {
+                Text("Price")
+                    .fontWeight(.semibold)
+                Text(sampleProduct.formattedPrice)
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .scaleEffect(1.35, anchor: .leading)
+            })//VStack
+            .offset(y: isAnimating ? -50 : -70)
+            
+            Spacer()
+            
+            Image(sampleProduct.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .offset(y: isAnimating ? 0 : -35)
+        })//HStack
+        .onAppear(perform: {
+            withAnimation(.easeInOut(duration: 0.75)) {
+                isAnimating.toggle()
+            }
+        })
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     TopPartDetailView()
 }
