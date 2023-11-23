@@ -15,7 +15,7 @@ struct NavigationBarView: View {
     var body: some View {
         HStack {
             Button {
-                
+                haptic.impactOccurred()
             } label: {
                 Image(systemName: "magnifyingglass")
             }
@@ -34,7 +34,7 @@ struct NavigationBarView: View {
             Spacer()
             
             Button {
-                
+                haptic.impactOccurred()
             } label: {
                 Image(systemName: "cart")
                     .overlay(alignment: .topTrailing) {

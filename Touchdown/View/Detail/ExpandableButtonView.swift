@@ -18,6 +18,7 @@ struct ExpandableButtonView: View {
     //MARK: - BODY
     var body: some View {
         Button {
+            haptic.impactOccurred()
             buttonAction()
         } label: {
             Spacer()

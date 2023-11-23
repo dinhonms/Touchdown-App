@@ -22,7 +22,7 @@ struct RatingSizeView: View {
                 HStack(spacing: 3) {
                     ForEach(0...4, id: \.self) { item in
                         Button {
-                            //TODO
+                            haptic.impactOccurred()
                         } label: {
                             Image(systemName: "star.fill")
                                 .frame(width: 28, height: 28, alignment: .center)
@@ -44,7 +44,7 @@ struct RatingSizeView: View {
                 HStack(spacing: 3) {
                     ForEach(sizes, id: \.self) { item in
                         Button {
-                            //TODO
+                            haptic.impactOccurred()
                         } label: {
                             Text(item)
                                 .foregroundStyle(colorGray)

@@ -16,6 +16,7 @@ struct NavBarDetailView: View {
     var body: some View {
         HStack {
             Button {
+                haptic.impactOccurred()
                 backAction()
             } label: {
                 Image(systemName: "chevron.left")
@@ -24,6 +25,7 @@ struct NavBarDetailView: View {
             Spacer()
             
             Button {
+                haptic.impactOccurred()
                 cartAction()
             } label: {
                 Image(systemName: "cart")

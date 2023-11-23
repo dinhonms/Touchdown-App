@@ -17,6 +17,7 @@ struct ProductItemView: View {
         VStack(alignment: .leading, spacing: 6) {
             ZStack {
                 Button(action: {
+                    haptic.impactOccurred()
                     buttonAction(self.product)
                 }, label: {
                     Image(product.image)

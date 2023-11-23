@@ -29,6 +29,7 @@ struct QuantityFavouriteView: View {
     var body: some View {
         HStack {
             Button {
+                haptic.impactOccurred()
                 removeItem()
             } label: {
                 Image(systemName: "minus.circle")
@@ -39,13 +40,14 @@ struct QuantityFavouriteView: View {
                 .font(.title)
             
             Button {
+                haptic.impactOccurred()
                 addItem()
             } label: {
                 Image(systemName: "plus.circle")
             }
             Spacer()
             Button {
-                
+                haptic.impactOccurred()
             } label: {
                 Image(systemName: "heart.circle")
                     .foregroundStyle(.pink)

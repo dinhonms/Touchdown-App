@@ -29,6 +29,7 @@ var topInset: CGFloat {
 }
 
 //UX
+let haptic = UIImpactFeedbackGenerator(style: .medium)
 //API
 //IMAGE
 //STRING
