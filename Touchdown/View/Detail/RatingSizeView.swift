@@ -48,7 +48,7 @@ struct RatingSizeView: View {
                         } label: {
                             Text(item)
                                 .foregroundStyle(colorGray)
-                                .fontWeight(.semibold)
+                                .font(.system(size: 15, weight: .semibold, design: .rounded))
                                 .frame(width: 28, height: 28, alignment: .center)
                                 .background(
                                     RoundedRectangle(cornerRadius: 5)

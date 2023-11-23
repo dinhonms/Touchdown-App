@@ -9,15 +9,24 @@ import SwiftUI
 
 struct ProductDetailScreen: View {
     //MARK: - PROPERTIES
+    @EnvironmentObject var shop: Shop
     
-    private func buttonAction() {
+    //MARK: - FUNCTIONS
+    private func backToHome() {
+        withAnimation(.easeOut) {
+            shop.showingProduct = false
+            shop.selectedProduct = nil
+        }
+    }
+    
+    private func showCart() {
         
     }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5, content: {
             //NAVBAR
-            NavBarDetailView()
+            NavBarDetailView(backAction: backToHome, cartAction: showCart)
                 .padding(.top, topInset)
                 .padding(.horizontal)
             
@@ -40,7 +49,7 @@ struct ProductDetailScreen: View {
                 //DESCRIPTION
                 ScrollView(.vertical, showsIndicators: false, content: {
                     //RATINGS and SIZES
-                    Text(sampleProduct.description)
+                    Text(shop.selectedProduct?.description ?? sampleProduct.description)
                         .font(.system(.body, design: .rounded))
                         .foregroundStyle(.gray)
                         .multilineTextAlignment(.leading)
@@ -51,7 +60,7 @@ struct ProductDetailScreen: View {
                     .padding(.vertical, 20)
                 
                 //ADD TO CART
-                ExpandableButtonView(buttonAction: buttonAction)
+                ExpandableButtonView(buttonAction: {})
                     .padding(.bottom, 20)
                 
             })//VStack
@@ -69,11 +78,12 @@ struct ProductDetailScreen: View {
         .zIndex(0)
         .ignoresSafeArea()
         .background(
-            sampleProduct.backgroundColor.ignoresSafeArea()
+            shop.selectedProduct?.backgroundColor.ignoresSafeArea() ?? sampleProduct.backgroundColor.ignoresSafeArea()
         )
     }
 }
 
 #Preview {
     ProductDetailScreen()
+        .environmentObject(Shop())
 }

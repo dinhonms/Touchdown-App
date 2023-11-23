@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class Shop: ObservableObject {
+    @Published var showingProduct = false
+    @Published var selectedProduct: ProductModel? = nil
+}

@@ -10,15 +10,20 @@ import SwiftUI
 struct ProductItemView: View {
     //MARK: - PROPERTIES
     @State var product: ProductModel
+    var buttonAction: (ProductModel) -> Void
     
     //MARK: - BODY
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             ZStack {
-                Image(product.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(20)
+                Button(action: {
+                    buttonAction(self.product)
+                }, label: {
+                    Image(product.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(20)
+                })
             }//ZStack
             .background(
                 product.backgroundColor
@@ -39,7 +44,7 @@ struct ProductItemView: View {
     //MARK: - PREVIEW
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItemView(product: products[0])
+        ProductItemView(product: products[0], buttonAction: { _ in})
             .padding()
     }
 }

@@ -12,6 +12,7 @@ struct TouchdownApp: App {
     var body: some Scene {
         WindowGroup {
             MainScreen()
+                .environmentObject(Shop())
         }
     }
 }

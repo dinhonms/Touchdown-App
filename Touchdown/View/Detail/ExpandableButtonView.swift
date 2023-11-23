@@ -10,6 +10,7 @@ import SwiftUI
 struct ExpandableButtonView: View {
     //MARK: - PROPERTIES
     @State var buttonName = "add to cart"
+    @EnvironmentObject var shop: Shop
     
     var buttonAction: () -> Void
 //    var buttonActionWithParameter: (String) -> Void
@@ -28,7 +29,7 @@ struct ExpandableButtonView: View {
             Spacer()
         }
         .background(
-            sampleProduct.backgroundColor
+            shop.selectedProduct?.backgroundColor ?? sampleProduct.backgroundColor
         )
         .clipShape(Capsule())
         
@@ -38,5 +39,6 @@ struct ExpandableButtonView: View {
 //MARK: - PREVIEW
 #Preview {
     ExpandableButtonView(buttonAction: {}) // method with parameter: buttonActionWithParameter: { _ in})
+        .environmentObject(Shop())
         .padding(.horizontal)
 }

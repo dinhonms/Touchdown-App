@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct NavBarDetailView: View {
+    //MARK: - PROPERTIES
+    var backAction: () -> Void
+    var cartAction: () -> Void
+    
+    //MARK: - BODY
     var body: some View {
         HStack {
             Button {
-                
+                backAction()
             } label: {
                 Image(systemName: "chevron.left")
             }
@@ -19,7 +24,7 @@ struct NavBarDetailView: View {
             Spacer()
             
             Button {
-                
+                cartAction()
             } label: {
                 Image(systemName: "cart")
             }
@@ -30,7 +35,7 @@ struct NavBarDetailView: View {
 }
 
 #Preview {
-    NavBarDetailView()
+    NavBarDetailView(backAction: {}, cartAction: {})
         .background (
             colorBackground
         )

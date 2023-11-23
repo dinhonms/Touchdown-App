@@ -31,6 +31,54 @@
             endingLineNumber = "3"
             landmarkName = "$s9Touchdown33_28AA41C3403C697001E8E4A131C96613Ll7PreviewfMf_15PreviewRegistryfMu_"
             landmarkType = "37">
+            <Locations>
+               <Location
+                  uuid = "8CB5A729-0AF3-4547-A5BF-DDA26FB4DD1E - f7b66a4ff97a34b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for fileID"
+                  moduleName = "Touchdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///var/folders/d7/x5k72vbj5xlg457g9l3n_q100000gn/T/swift-generated-sources/@__swiftmacro_9Touchdown33_28AA41C3403C697001E8E4A131C96613Ll7PreviewfMf_.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3"
+                  endingLineNumber = "3"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "8CB5A729-0AF3-4547-A5BF-DDA26FB4DD1E - 86c38d3fe96f5740"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Touchdown.$s9Touchdown33_28AA41C3403C697001E8E4A131C96613Ll7PreviewfMf_15PreviewRegistryfMu_.fileID.unsafeMutableAddressor : Swift.String"
+                  moduleName = "Touchdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///var/folders/d7/x5k72vbj5xlg457g9l3n_q100000gn/T/swift-generated-sources/@__swiftmacro_9Touchdown33_28AA41C3403C697001E8E4A131C96613Ll7PreviewfMf_.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3"
+                  endingLineNumber = "3"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C313D849-CC16-41B8-8F56-194AE59ED5A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Touchdown/App/MainScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "showProductDetail(selectedProduct:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

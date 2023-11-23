@@ -42,6 +42,7 @@
 		77A621172B037CDA0062A0CA /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A621162B037CDA0062A0CA /* ProductDetailScreen.swift */; };
 		77A621192B037D8F0062A0CA /* NavBarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A621182B037D8F0062A0CA /* NavBarDetailView.swift */; };
 		77A6211B2B0380560062A0CA /* HeaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A6211A2B0380560062A0CA /* HeaderDetailView.swift */; };
+		77D079D32B0F58EA0011D173 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D079D22B0F58EA0011D173 /* Shop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		77A621162B037CDA0062A0CA /* ProductDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScreen.swift; sourceTree = "<group>"; };
 		77A621182B037D8F0062A0CA /* NavBarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarDetailView.swift; sourceTree = "<group>"; };
 		77A6211A2B0380560062A0CA /* HeaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailView.swift; sourceTree = "<group>"; };
+		77D079D22B0F58EA0011D173 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			children = (
 				771EE5852AF25592005E8003 /* Constant.swift */,
 				7709C75E2B0B6471002C2B93 /* CustomShape.swift */,
+				77D079D22B0F58EA0011D173 /* Shop.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				775C0F132AF8F1780069701A /* CategoryGridView.swift in Sources */,
 				771EE56F2AF2533A005E8003 /* MainScreen.swift in Sources */,
 				775C0F0F2AF8EB160069701A /* CategoryModel.swift in Sources */,
+				77D079D32B0F58EA0011D173 /* Shop.swift in Sources */,
 				775C0F192AFA4C0B0069701A /* ProductModel.swift in Sources */,
 				771EE58C2AF25BC3005E8003 /* LogoView.swift in Sources */,
 				775C0F152AF8F39B0069701A /* SectionItemView.swift in Sources */,
@@ -468,7 +472,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -503,7 +507,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
