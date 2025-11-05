@@ -44,8 +44,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "3"
-                  endingLineNumber = "3"
-                  offsetFromSymbolStart = "52">
+                  endingLineNumber = "3">
                </Location>
                <Location
                   uuid = "8CB5A729-0AF3-4547-A5BF-DDA26FB4DD1E - 86c38d3fe96f5740"
@@ -59,8 +58,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "3"
-                  endingLineNumber = "3"
-                  offsetFromSymbolStart = "16">
+                  endingLineNumber = "3">
                </Location>
             </Locations>
          </BreakpointContent>
